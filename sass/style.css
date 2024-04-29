@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.topContainer {
+  width: 100%;
+}
+
+#keyboard {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1500px) {
+  #keyboard {
+    width: auto;
+    left: -200px;
+  }
+}
+.contain {
+  padding: 0 300px;
+}
+
+@media screen and (max-width: 1500px) {
+  .contain {
+    padding: 0 50px;
+  }
+}
+header {
+  color: white;
+}
+
+#carousel {
+  color: white;
+}
+#carousel .laptopDiv {
+  padding-top: 380px;
+}
+#carousel #carouselDiv {
+  padding: 300px 0px;
+}
+#carousel #carouselDiv h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+  #carousel .laptopDiv {
+    padding-top: 320px;
+  }
+  #carousel h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+#welcome {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+#welcome h2 {
+  font-size: 3rem !important;
+  color: rgb(46, 177, 196);
+}
+#welcome svg {
+  color: rgb(46, 177, 196);
+  margin-right: 15px;
+}
+
+.welcomeList {
+  display: flex;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 1500px) {
+  #welcome {
+    margin-top: 10% !important;
+  }
+  .welcomeList {
+    display: block;
+  }
+}
+#learnMore, #joinUs {
+  background: url("../assets/images/laptop.jpg") rgb(46, 177, 196);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  text-align: center;
+}
+#learnMore h2, #joinUs h2 {
+  margin: 2% 0;
+}
+#learnMore button, #joinUs button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.8%;
+}
+
+@media screen and (max-width: 1500px) {
+  #learnMore, #joinUs {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  #learnMore button, #joinUs button {
+    margin-top: 5%;
+    padding: 2% 5%;
+  }
+}
+#about {
+  padding-left: 300px;
+}
+#about h3 {
+  font-size: 3rem !important;
+}
+#about p {
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+}
+#about img {
+  width: 700px;
+}
+
+@media screen and (max-width: 1500px) {
+  #about {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #about h3 {
+    margin-left: 50px;
+  }
+  #about p {
+    margin-left: 50px;
+    margin-bottom: 5%;
+  }
+  #about img {
+    width: 100%;
+  }
+}
+#joinUs {
+  font-size: 1.5rem;
+}
+#joinUs h2 {
+  font-size: 2.5rem !important;
+}
+#joinUs button {
+  border: none;
+}
+#joinUs form {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 0.5% 20px;
+}
+#joinUs form input, #joinUs #contact form .contactFormDiv textarea, #contact #joinUs form .contactFormDiv textarea {
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+}
+#joinUs form input::-moz-placeholder, #joinUs #contact form .contactFormDiv textarea::-moz-placeholder, #contact #joinUs form .contactFormDiv textarea::-moz-placeholder {
+  color: white;
+}
+#joinUs form input:-ms-input-placeholder, #joinUs #contact form .contactFormDiv textarea:-ms-input-placeholder, #contact #joinUs form .contactFormDiv textarea:-ms-input-placeholder {
+  color: white;
+}
+#joinUs form input::placeholder, #joinUs #contact form .contactFormDiv textarea::placeholder, #contact #joinUs form .contactFormDiv textarea::placeholder {
+  color: white;
+}
+
+#contact {
+  background-color: rgb(242, 247, 248);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#contact form {
+  width: 100%;
+}
+#contact form button {
+  border: none;
+  background-color: rgb(46, 177, 196);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.5% 2%;
+  margin-top: 2%;
+}
+#contact form .contactFormDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#contact form .contactFormDiv input, #contact form .contactFormDiv textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2%;
+}
+#contact form .contactFormDiv textarea {
+  width: auto;
+  color: grey;
+}
+#contact form .contactFormDiv .inputs {
+  margin: 2% 0;
+  width: 50%;
+}
+#contact form .contactFormDiv .textareaDiv {
+  width: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+  #contact {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  #contact .contactFormDiv {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  #contact .contactFormDiv .inputs {
+    margin: 2% 0;
+    width: 100% !important;
+  }
+  #contact .contactFormDiv .textareaDiv {
+    width: 100% !important;
+  }
+  #contact .contactFormDiv input, #contact form .contactFormDiv textarea {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+  #contact button {
+    padding: 4% 8% !important;
+  }
+}
+footer {
+  background-color: rgb(31, 32, 33);
+  color: white;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+  display: flex;
+}
+footer nav {
+  width: 50%;
+}
+footer svg {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 1500px) {
+  footer {
+    flex-direction: column;
+  }
+  footer nav {
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+}/*# sourceMappingURL=style.css.map */
